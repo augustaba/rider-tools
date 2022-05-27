@@ -25,5 +25,8 @@
     "chokidar": "^3.5.3",
     "rimraf": "^3.0.2",
     "vinyl-fs": "^3.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
