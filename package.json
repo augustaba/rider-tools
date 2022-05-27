@@ -8,7 +8,7 @@
   "bin": "./bin/rider-tools.js",
   "repository": {
     "type": "git",
-    "url": "https://"
+    "url": "git+https://github.com/augustaba/rider-tools.git"
   },
   "keywords": [
     "rider",
