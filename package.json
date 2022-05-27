@@ -1,0 +1,29 @@
+{
+  "name": "@rider/rider-tools",
+  "version": "0.0.1-beta.0",
+  "description": " A tool to handle js, typescript ...",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./bin/rider-tools.js",
+  "repository": {
+    "type": "git",
+    "url": "https://"
+  },
+  "keywords": [
+    "rider",
+    "build",
+    "rollup",
+    "typescript"
+  ],
+  "author": "augustaba",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "chokidar": "^3.5.3",
+    "rimraf": "^3.0.2",
+    "vinyl-fs": "^3.0.3"
+  }
+}
