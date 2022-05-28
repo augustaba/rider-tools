@@ -3,6 +3,8 @@ const { join, extname } = require('path')
 const rimraf = require('rimraf')
 const vfs = require('vinyl-fs');
 const through = require('through2');
+const chalk = require('chalk')
+const log = require('./utils/log')
 
 const cwd = process.cwd()
 
@@ -16,8 +18,14 @@ function getBabelConfig() {
 }
 
 function transform(opts) {
+  const babelConfig = getBabelConfig()
+  log.transform(
+    chalk['blue'](
+      `${opts.path.replace(`${cwd}/`, '')}`,
+    ),
+  );
   return babel.transform(opts.contents, {
-    ...getBabelConfig,
+    ...babelConfig,
     filename: opts.path
   }).code
 }
@@ -50,7 +58,7 @@ function build(dir) {
 
   const stream = createStream(join(srcDir, '**/*'))
   stream.on('end', () => {
-    console.log('process send:', process.send)
+    log.success(chalk['green']('process success'))
   })
 }
 

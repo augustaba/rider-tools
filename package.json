@@ -1,6 +1,6 @@
 {
-  "name": "@rider/rider-tools",
-  "version": "0.0.1-beta.0",
+  "name": "@augustaba/rider-tools",
+  "version": "0.0.1",
   "description": " A tool to handle js, typescript ...",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,8 +22,10 @@
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-typescript": "^7.17.12",
+    "chalk": "4.1.2",
     "chokidar": "^3.5.3",
     "rimraf": "^3.0.2",
+    "signale": "^1.4.0",
     "vinyl-fs": "^3.0.3"
   },
   "publishConfig": {

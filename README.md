@@ -1,7 +1,38 @@
 # Usage
 
 ## install
-yarn add @rider/rider-tools -D
+```bash
+$ yarn add @rider/rider-tools -D
+```
 
 ## build
-rider-tools
+```bash
+$ npx rider-tools
+```
+
+## example
+
+before:
+
+```
+demo
+|-- src
+|   |-- utils
+|   |   |-- index.ts
+|   |-- build.ts
+```
+
+after:
+
+```
+demo
+|-- src
+|   |-- utils
+|   |   |-- index.ts
+|   |-- build.ts
+|-- lib
+|   |-- utils
+|   |   |-- index.js
+|   |-- build.js
+
+```
